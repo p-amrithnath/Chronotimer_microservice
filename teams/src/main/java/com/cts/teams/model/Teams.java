@@ -20,13 +20,13 @@ public class Teams {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Column(nullable = false, unique = true)
+//	@Column(nullable = false, unique = true)
 	private String empId;
 
 	@Column(nullable = false)
 	private String name;
 
-	@Column(nullable = false, unique = true)
+//	@Column(nullable = false, unique = true)
 	private String email;
 
 	@Column(nullable = false)

@@ -12,12 +12,16 @@ import org.springframework.stereotype.Service;
 import com.cts.teams.dao.TeamsDao;
 import com.cts.teams.exception.ResourceNotFoundException;
 import com.cts.teams.model.Teams;
+import com.cts.teams.utils.EmailService;
 
 @Service
 public class TeamsServiceImpl implements TeamsService {
 
 	@Autowired
 	private TeamsDao teamsDao;
+	
+    @Autowired
+	private EmailService emailService;
 
 	@Override
 	public Page<Teams> getAllTeams(int page, int size, String sortBy) {
@@ -36,6 +40,8 @@ public class TeamsServiceImpl implements TeamsService {
 
 	@Override
 	public Teams createTeam(Teams team) {
+		String Text = "User email" + team.getEmail();
+//		emailService.sendEmail(team.getEmail(), "Welcome to CTS ",Text);
 		return teamsDao.save(team);
 	}
 

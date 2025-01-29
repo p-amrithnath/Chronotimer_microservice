@@ -7,13 +7,13 @@ import java.util.Optional;
 
 public interface TeamsService {
 
-    Page<Teams> getAllTeams(int page, int size, String sortBy);
+    public abstract Page<Teams> getAllTeams(int page, int size, String sortBy);
 
-    Optional<Teams> getTeamById(int id);
+    public abstract Optional<Teams> getTeamById(int id);
 
-    Teams createTeam(Teams employee);
+    public abstract Teams createTeam(Teams employee);
 
-    Teams updateTeam(int id, Teams employeeDetails);
+    public abstract Teams updateTeam(int id, Teams employeeDetails);
 
-    void deleteTeam(int id);
+    public void deleteTeam(int id);
 }
