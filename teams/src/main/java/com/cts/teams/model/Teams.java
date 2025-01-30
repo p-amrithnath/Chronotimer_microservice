@@ -10,39 +10,54 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PastOrPresent;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
 @Data
 @Entity
 public class Teams {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-//	@Column(nullable = false, unique = true)
-	private String empId;
+    @NotBlank(message = "Employee ID is mandatory")
+    @Column(nullable = false, unique = true)
+    private Long empId;
 
-	@Column(nullable = false)
-	private String name;
+    @NotBlank(message = "Name is mandatory")
+    @Column(nullable = false)
+    private String name;
 
-//	@Column(nullable = false, unique = true)
-	private String email;
+    @Email(message = "Email should be valid")
+    @NotBlank(message = "Email is mandatory")
+    @Column(nullable = false, unique = true)
+    private String email;
 
-	@Column(nullable = false)
-	private String empDesg;
+    @NotBlank(message = "Designation is mandatory")
+    @Column(nullable = false)
+    private String empDesg;
 
-	@Enumerated(EnumType.STRING)
-	@Column(nullable = false)
-	private Role role;
+    @Enumerated(EnumType.STRING)
+    @NotNull(message = "Role is mandatory")
+    @Column(nullable = false)
+    private Role role;
 
-	@Column(nullable = false)
-	private BigDecimal salary;
+    @Positive(message = "Salary must be positive")
+    @NotNull(message = "Salary is mandatory")
+    @Column(nullable = false)
+    private BigDecimal salary;
 
-	@Column(nullable = false)
-	private LocalDate doj;
+    @PastOrPresent(message = "Date of joining must be in the past or present")
+    @NotNull(message = "Date of joining is mandatory")
+    @Column(nullable = false)
+    private LocalDate doj;
 
-	public enum Role {
-		EMPLOYEE, SUPERADMIN
-	}
+    public enum Role {
+        EMPLOYEE, SUPERADMIN
+    }
 }

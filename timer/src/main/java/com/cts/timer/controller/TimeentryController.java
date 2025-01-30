@@ -21,12 +21,13 @@ import com.cts.timer.service.TimesheetsService;
 @RestController
 @RequestMapping("/timeentry")
 public class TimeentryController {
- 
-	@Autowired
-	private  TimesheetsService timeentryService;
 
-	@GetMapping("/fetch/{employeeId}/{date}") 
-	public List<Timeentry> findByDateAndEmployeeId(@PathVariable("date") LocalDate date, @PathVariable("employeeId") Long employeeId) {
+	@Autowired
+	private TimesheetsService timeentryService;
+
+	@GetMapping("/fetch/{employeeId}/{date}")
+	public List<Timeentry> findByDateAndEmployeeId(@PathVariable("date") LocalDate date,
+			@PathVariable("employeeId") Long employeeId) {
 
 		return timeentryService.findByDateAndEmployeeId(date, employeeId);
 	}

@@ -41,7 +41,6 @@ public class TeamsController {
 
 	@PostMapping
 	public Teams createEmployee(@RequestBody Teams employee) {
-		System.out.println("eeeeeeeeeeee");
 		return employeeService.createTeam(employee);
 	}
 

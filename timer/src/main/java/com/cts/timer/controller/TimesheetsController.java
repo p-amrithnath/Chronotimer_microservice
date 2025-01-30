@@ -36,7 +36,5 @@ public class TimesheetsController {
 			@PathVariable("employeeId") Long employeeId) {
 		return timesheetsService.getMonthlyTimesheet(month, year, employeeId);
 	}
-	
-	
 
 }
