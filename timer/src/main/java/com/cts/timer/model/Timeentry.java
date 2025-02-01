@@ -33,43 +33,43 @@ public class Timeentry {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull(message = "Employee ID is mandatory")
-    @Min(value = 1, message = "Employee ID must be at least 1")
+//    @NotNull(message = "Employee ID is mandatory")
+//    @Min(value = 1, message = "Employee ID must be at least 1")
     private Long employeeId;
 
     @NotNull(message = "Project ID is mandatory")
     @Min(value = 1, message = "Project ID must be at least 1")
     private Long projectId;
 
-    @NotBlank(message = "Category is mandatory")
-    @Size(max = 50, message = "Category should not exceed 50 characters")
+//    @NotBlank(message = "Category is mandatory")
+//    @Size(max = 50, message = "Category should not exceed 50 characters")
     private String category;
 
-    @NotBlank(message = "Task description is mandatory")
-    @Size(max = 255, message = "Task description should not exceed 255 characters")
+//    @NotBlank(message = "Task description is mandatory")
+//    @Size(max = 255, message = "Task description should not exceed 255 characters")
     private String taskDescription;
 
-    @NotNull(message = "Start time is mandatory")
-    @PastOrPresent(message = "Start time cannot be in the future")
+//    @NotNull(message = "Start time is mandatory")
+//    @PastOrPresent(message = "Start time cannot be in the future")
     private LocalDateTime startTime;
 
     @NotNull(message = "End time is mandatory")
-    @FutureOrPresent(message = "End time cannot be in the past")
+//    @FutureOrPresent(message = "End time cannot be in the past")
     private LocalDateTime endTime;
 
     @NotNull(message = "Date is mandatory")
-    @PastOrPresent(message = "Date cannot be in the future")
+//    @PastOrPresent(message = "Date cannot be in the future")
     private LocalDate date;
 
-    @Enumerated(EnumType.STRING)
-    @NotNull(message = "Status is mandatory")
+//    @Enumerated(EnumType.STRING)
+//    @NotNull(message = "Status is mandatory")
     private Status status;
 
-    @NotNull(message = "Submit status is mandatory")
+//    @NotNull(message = "Submit status is mandatory")
     private Boolean submit;
 
-    @NotNull(message = "Hours are mandatory")
-    @DecimalMin(value = "0.0", inclusive = false, message = "Hours must be greater than 0")
+//    @NotNull(message = "Hours are mandatory")
+//    @DecimalMin(value = "0.0", inclusive = false, message = "Hours must be greater than 0")
     private BigDecimal hours;
 
     public enum Status {

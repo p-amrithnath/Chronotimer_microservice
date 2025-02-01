@@ -25,9 +25,9 @@ public class Teams {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotBlank(message = "Employee ID is mandatory")
-    @Column(nullable = false, unique = true)
-    private Long empId;
+//    @NotBlank(message = "Employee ID is mandatory")
+//    @Column(nullable = false, unique = true)
+    private String empId;
 
     @NotBlank(message = "Name is mandatory")
     @Column(nullable = false)

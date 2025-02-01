@@ -1,4 +1,4 @@
-package com.telusko.service_registry;
+package com.cts.service_registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

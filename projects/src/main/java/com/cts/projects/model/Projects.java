@@ -25,35 +25,35 @@ public class Projects {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false, unique = true)
-    @NotBlank(message = "Project name is mandatory")
-    @Size(max = 100, message = "Project name should not exceed 100 characters")
+//    @Column(nullable = false, unique = true)
+//    @NotBlank(message = "Project name is mandatory")
+//    @Size(max = 100, message = "Project name should not exceed 100 characters")
     private String projName;
 
-    @Column(nullable = false)
-    @NotBlank(message = "Type is mandatory")
+//    @Column(nullable = false)
+//    @NotBlank(message = "Type is mandatory")
     private String type;
 
-    @Column(nullable = false)
-    @NotNull(message = "Start date is mandatory")
-    @PastOrPresent(message = "Start date cannot be in the future")
+//    @Column(nullable = false)
+//    @NotNull(message = "Start date is mandatory")
+//    @PastOrPresent(message = "Start date cannot be in the future")
     private LocalDate startDate;
 
-    @Column(nullable = false)
-    @NotNull(message = "Close date is mandatory")
-    @FutureOrPresent(message = "Close date cannot be in the past")
+//    @Column(nullable = false)
+//    @NotNull(message = "Close date is mandatory")
+//    @FutureOrPresent(message = "Close date cannot be in the past")
     private LocalDate closeDate;
 
-    @Column(nullable = false, unique = true)
-    @NotBlank(message = "TAM is mandatory")
+//    @Column(nullable = false, unique = true)
+//    @NotBlank(message = "TAM is mandatory")
     private String TAM;
 
-    @Column(nullable = false)
-    @NotNull(message = "Estimated hours are mandatory")
-    @Min(value = 1, message = "Estimated hours should be at least 1")
+//    @Column(nullable = false)
+//    @NotNull(message = "Estimated hours are mandatory")
+//    @Min(value = 1, message = "Estimated hours should be at least 1")
     private Integer estimatedhrs;
 
-    @Column(nullable = false)
-    @NotBlank(message = "Description is mandatory")
+//    @Column(nullable = false)
+//    @NotBlank(message = "Description is mandatory")
     private String description;
 }
