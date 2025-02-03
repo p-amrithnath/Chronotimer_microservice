@@ -856,3 +856,4 @@ java.lang.IllegalArgumentException: Time entry overlaps with an existing entry.
 2025-02-03T14:50:39.093+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T14:55:39.105+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T15:00:39.107+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:05:39.122+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

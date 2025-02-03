@@ -872,3 +872,4 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2025-02-03T14:50:17.033+05:30  INFO 19924 --- [teams] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T14:55:17.043+05:30  INFO 19924 --- [teams] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T15:00:17.052+05:30  INFO 19924 --- [teams] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:05:17.065+05:30  INFO 19924 --- [teams] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

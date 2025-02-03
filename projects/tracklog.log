@@ -1673,3 +1673,4 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2025-02-03T14:49:52.439+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T14:54:52.441+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T14:59:52.448+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:04:52.452+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
