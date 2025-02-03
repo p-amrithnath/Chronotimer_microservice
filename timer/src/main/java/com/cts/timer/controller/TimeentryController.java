@@ -34,7 +34,6 @@ public class TimeentryController {
 
 	@PatchMapping("/submit/{employeeId}/{date}")
 	public void submitTimeentries(@PathVariable("date") LocalDate date, @PathVariable("employeeId") Long employeeId) {
-
 		timeentryService.submitTimeentries(date, employeeId);
 	}
 

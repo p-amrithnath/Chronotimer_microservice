@@ -2,6 +2,10 @@ package com.cts.projects.service;
 
 import java.util.List;
 
+/**
+ * Interface for the Projects service
+ */
+
 import com.cts.projects.model.Projects;
 
 public interface ProjectsService {

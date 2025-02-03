@@ -39,7 +39,7 @@ public class TeamsController {
 		return employeeService.getTeamById(id);
 	}
 
-	@PostMapping
+	@PostMapping("/save")
 	public Teams createEmployee(@RequestBody Teams employee) {
 		return employeeService.createTeam(employee);
 	}

@@ -27,8 +27,6 @@ public class TimesheetsController {
 	}
 	
 	
-	
-
 	@PatchMapping("/submit/{employeeId}/{date}")
 	public String submitTimesheet(@PathVariable("employeeId") Long employeeId, @PathVariable("date") LocalDate date) {
 		return timesheetsService.submitTimesheet(employeeId, date);

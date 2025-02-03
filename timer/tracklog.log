@@ -1,10 +1,858 @@
-2025-02-01T09:41:21.147+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:18:24.714+05:30  WARN 20496 --- [timer] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m6s758ms588µs200ns).
-2025-02-01T10:22:57.900+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:27:57.912+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:34:15.154+05:30  WARN 20496 --- [timer] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m20s249ms161µs300ns).
-2025-02-01T10:36:48.173+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:41:48.183+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:46:48.204+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-02-01T10:52:41.222+05:30  WARN 20496 --- [timer] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s112ms29µs300ns).
-2025-02-01T10:53:45.433+05:30  INFO 20496 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:29:05.122+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Starting TimerApplication using Java 21.0.5 with PID 12604 (C:\Users\2380232\git\repository4\timer\target\classes started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T11:29:05.133+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T11:29:05.197+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T11:29:05.197+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T11:29:05.201+05:30  INFO 12604 --- [timer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-03T11:29:05.202+05:30  INFO 12604 --- [timer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-03T11:29:06.462+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T11:29:06.609+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 2 JPA repository interfaces.
+2025-02-03T11:29:06.881+05:30  INFO 12604 --- [timer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b0207b1-4870-3596-beb6-ca19127f6d87
+2025-02-03T11:29:07.567+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-02-03T11:29:07.585+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T11:29:07.586+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T11:29:07.678+05:30  INFO 12604 --- [timer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-03T11:29:07.678+05:30  INFO 12604 --- [timer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2476 ms
+2025-02-03T11:29:07.860+05:30  INFO 12604 --- [timer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T11:29:07.926+05:30  INFO 12604 --- [timer] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T11:29:07.971+05:30  INFO 12604 --- [timer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T11:29:08.376+05:30  INFO 12604 --- [timer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T11:29:08.422+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T11:29:08.953+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a8aae9f
+2025-02-03T11:29:08.956+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T11:29:09.074+05:30  INFO 12604 --- [timer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T11:29:10.395+05:30  INFO 12604 --- [timer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T11:29:10.558+05:30  INFO 12604 --- [timer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T11:29:10.940+05:30  INFO 12604 --- [timer] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T11:29:12.034+05:30  WARN 12604 --- [timer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T11:29:12.736+05:30  WARN 12604 --- [timer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-03T11:29:12.814+05:30  INFO 12604 --- [timer] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T11:29:12.871+05:30  WARN 12604 --- [timer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T11:29:12.965+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T11:29:12.992+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T11:29:12.995+05:30  INFO 12604 --- [timer] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T11:29:13.005+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T11:29:13.342+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T11:29:13.344+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T11:29:13.347+05:30  INFO 12604 --- [timer] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T11:29:13.349+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738562353349 with initial instances count: 2
+2025-02-03T11:29:13.354+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T11:29:13.354+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738562353354, current=UP, previous=STARTING]
+2025-02-03T11:29:13.357+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T11:29:13.378+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-02-03T11:29:13.379+05:30  INFO 12604 --- [timer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2025-02-03T11:29:13.394+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Started TimerApplication in 17.101 seconds (process running for 19.066)
+2025-02-03T11:29:13.412+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T11:34:13.008+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:39:13.037+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:44:46.389+05:30  WARN 12604 --- [timer] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m37s100ms591µs800ns).
+2025-02-03T11:45:20.141+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:48:28.177+05:30  INFO 12604 --- [timer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-02-03T11:48:28.179+05:30  INFO 12604 --- [timer] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T11:48:28.179+05:30  INFO 12604 --- [timer] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738563508179, current=DOWN, previous=UP]
+2025-02-03T11:48:28.180+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T11:48:28.183+05:30  INFO 12604 --- [timer] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T11:48:28.190+05:30  INFO 12604 --- [timer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T11:48:28.191+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T11:48:28.195+05:30  INFO 12604 --- [timer] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T11:48:28.198+05:30  INFO 12604 --- [timer] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T11:48:28.208+05:30  INFO 12604 --- [timer] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T11:48:28.209+05:30  INFO 12604 --- [timer] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T11:48:31.225+05:30  INFO 12604 --- [timer] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T11:48:31.243+05:30  INFO 12604 --- [timer] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T11:48:31.243+05:30  INFO 12604 --- [timer] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T11:48:32.525+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Starting TimerApplication using Java 21.0.5 with PID 12604 (C:\Users\2380232\git\repository4\timer\target\classes started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T11:48:32.525+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T11:48:32.527+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T11:48:32.527+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T11:48:33.043+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T11:48:33.056+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-02-03T11:48:33.130+05:30  INFO 12604 --- [timer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b0207b1-4870-3596-beb6-ca19127f6d87
+2025-02-03T11:48:33.243+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-02-03T11:48:33.244+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T11:48:33.245+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T11:48:33.278+05:30  INFO 12604 --- [timer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-03T11:48:33.278+05:30  INFO 12604 --- [timer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 751 ms
+2025-02-03T11:48:33.313+05:30  INFO 12604 --- [timer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T11:48:33.315+05:30  INFO 12604 --- [timer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T11:48:33.328+05:30  INFO 12604 --- [timer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T11:48:33.330+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-02-03T11:48:33.356+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ec3fdea
+2025-02-03T11:48:33.357+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-02-03T11:48:33.359+05:30  INFO 12604 --- [timer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T11:48:33.444+05:30  INFO 12604 --- [timer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T11:48:33.521+05:30  INFO 12604 --- [timer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T11:48:33.646+05:30  WARN 12604 --- [timer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T11:48:33.847+05:30  WARN 12604 --- [timer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-03T11:48:33.899+05:30  INFO 12604 --- [timer] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T11:48:33.929+05:30  WARN 12604 --- [timer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T11:48:33.959+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T11:48:33.961+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T11:48:33.962+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T11:48:33.993+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T11:48:33.994+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T11:48:33.995+05:30  INFO 12604 --- [timer] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T11:48:33.995+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738563513995 with initial instances count: 4
+2025-02-03T11:48:33.997+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T11:48:33.997+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738563513997, current=UP, previous=STARTING]
+2025-02-03T11:48:33.997+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T11:48:34.000+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-02-03T11:48:34.002+05:30  INFO 12604 --- [timer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2025-02-03T11:48:34.012+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T11:48:34.013+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Started TimerApplication in 2.687 seconds (process running for 1179.685)
+2025-02-03T11:48:34.015+05:30  INFO 12604 --- [timer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-03T11:53:33.974+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T11:58:33.975+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:03:33.990+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:06:06.373+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x030x010xf40x010x000x010xf00x030x030xa60x9d0xc60xd90xb20xd7/0xb0S:0xa910xa30xd50x1ec0x090xfd0xbc0x8e0x180x1c}0xf80x890xa0V0xa50xbd0xc80xb6/0x000x01|0x000x000x000x010x000x020x000x030x000x040x000x050x000x060x000x070x000x080x000x090x000x0a0x000x0b0x000x0c0x000x0d0x000x0e0x000x0f0x000x100x000x110x000x120x000x130x000x140x000x150x000x160x000x170x000x180x000x190x000x1a0x000x1b0x00/0x0000x0010x0020x0030x0040x0050x0060x0070x0080x0090x00:0x00;0x00<0x00=0x00>0x00?0x00@0x00A0x00B0x00C0x00D0x00E0x00F0x00g0x00h0x00i0x00j0x00k0x00l0x00m0x000x840x000x850x000x860x000x870x000x880x000x890x000x960x000x970x000x980x000x990x000x9a0x000x9b0x000x9c0x000x9d0x000x9e0x000x9f0x000xa00x000xa10x000xa20x000xa30x000xa40x000xa50x000xa60x000xa70x000xba0x000xbb0x000xbc0x000xbd0x000xbe0x000xbf0x000xc00x000xc10x000xc20x000xc30x000xc40x000xc50x130x010x130x020x130x030x130x040x130x050xc00x010xc00x020xc00x030xc00x040xc00x050xc00x060xc00x070xc00x080xc00x090xc00x0a0xc00x0b0xc00x0c0xc00x0d0xc00x0e0xc00x0f0xc00x100xc00x110xc00x120xc00x130xc00x140xc00x150xc00x160xc00x170xc00x180xc00x190xc0#0xc0$0xc0%0xc0&0xc0'0xc0(0xc0)0xc0*0xc0+0xc0,0xc0-0xc0.0xc0/0xc000xc010xc020xc0r0xc0s0xc0t0xc0u0xc0v0xc0w0xc0x0xc0y0xc0z0xc0{0xc0|0xc0}0xc0~0xc00x7f0xc00x800xc00x810xc00x820xc00x830xc00x840xc00x850xc00x860xc00x870xc00x880xc00x890xc00x8a0xc00x8b0xc00x8c0xc00x8d0xc00x8e0xc00x8f0xc00x900xc00x910xc00x920xc00x930xc00x940xc00x950xc00x960xc00x970xc00x980xc00x990xc00x9a0xc00x9b0xcc0xa80xcc0xa90xcc0xaa0xcc0xab0xcc0xac0xcc0xad0xcc0xae0x020x000x010x00J0x000x0a0x000x0a0x000x080x000x170x000x190x000x180x000x160x000x0b0x000x040x030x000x010x020x000x0d0x0000x00.0x040x030x050x030x060x030x080x070x080x080x080x1a0x080x1b0x080x1c0x080x090x080x0a0x080x0b0x080x040x080x050x080x060x040x010x050x010x060x010x030x030x030x010x030x020x040x020x050x020x060x02...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-03T12:08:33.998+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:13:34.013+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:18:34.029+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:23:34.042+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:28:34.045+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:33:34.057+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:38:34.061+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:43:34.064+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:48:34.070+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:53:34.082+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T12:58:34.088+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:03:34.092+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:05:31.112+05:30  INFO 12832 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 12832 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:05:31.114+05:30  INFO 12832 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:05:31.155+05:30  INFO 12832 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:05:31.156+05:30  INFO 12832 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:05:32.033+05:30  INFO 12832 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:05:32.246+05:30  INFO 12832 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:05:32.682+05:30  INFO 12832 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:05:33.211+05:30  INFO 12832 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:05:33.297+05:30  INFO 12832 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:05:33.359+05:30  INFO 12832 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:05:33.672+05:30  INFO 12832 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:05:33.704+05:30  INFO 12832 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:05:34.088+05:30  INFO 12832 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54b96813
+2025-02-03T13:05:34.091+05:30  INFO 12832 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:05:34.234+05:30  INFO 12832 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:05:35.173+05:30  INFO 12832 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:05:35.291+05:30  INFO 12832 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:05:35.849+05:30  INFO 12832 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:05:37.137+05:30  WARN 12832 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:05:37.997+05:30  INFO 12832 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:05:38.069+05:30  WARN 12832 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:05:38.149+05:30  INFO 12832 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:05:38.178+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:05:38.183+05:30  INFO 12832 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:05:38.194+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:05:38.194+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:05:38.195+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:05:38.195+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:05:38.195+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:05:38.195+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:05:38.195+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:05:38.450+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:05:38.453+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:05:38.455+05:30  INFO 12832 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:05:38.458+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738568138456 with initial instances count: 4
+2025-02-03T13:05:38.460+05:30  INFO 12832 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:05:38.461+05:30  INFO 12832 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568138461, current=UP, previous=STARTING]
+2025-02-03T13:05:38.467+05:30  INFO 12832 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:05:38.495+05:30  INFO 12832 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 9.734 seconds (process running for 11.264)
+2025-02-03T13:05:38.539+05:30  INFO 12832 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:05:49.124+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:05:49.124+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568149124, current=DOWN, previous=UP]
+2025-02-03T13:05:49.125+05:30  INFO 12832 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:05:49.134+05:30  INFO 12832 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:05:49.138+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:05:49.144+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:05:49.170+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:05:49.171+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:05:52.187+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:05:52.205+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:05:52.206+05:30  INFO 12832 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:06:07.911+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:06:07.912+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:06:07.920+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:08:34.099+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:13:34.101+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:13:50.019+05:30  INFO 1072 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 1072 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:13:50.022+05:30  INFO 1072 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:13:50.077+05:30  INFO 1072 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:13:50.077+05:30  INFO 1072 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:13:51.111+05:30  INFO 1072 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:13:51.382+05:30  INFO 1072 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:13:51.988+05:30  INFO 1072 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:13:52.579+05:30  INFO 1072 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:13:52.680+05:30  INFO 1072 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:13:52.744+05:30  INFO 1072 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:13:53.150+05:30  INFO 1072 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:13:53.191+05:30  INFO 1072 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:13:53.628+05:30  INFO 1072 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54b96813
+2025-02-03T13:13:53.631+05:30  INFO 1072 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:13:53.753+05:30  INFO 1072 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:13:54.793+05:30  INFO 1072 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:13:54.896+05:30  INFO 1072 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:13:55.271+05:30  INFO 1072 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:13:56.509+05:30  WARN 1072 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:13:57.443+05:30  INFO 1072 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:13:57.534+05:30  WARN 1072 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:13:57.619+05:30  INFO 1072 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:13:57.662+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:13:57.676+05:30  INFO 1072 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:13:57.701+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:13:57.702+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:13:57.989+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:13:57.993+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:13:57.996+05:30  INFO 1072 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:13:57.997+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738568637997 with initial instances count: 4
+2025-02-03T13:13:58.003+05:30  INFO 1072 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:13:58.004+05:30  INFO 1072 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568638003, current=UP, previous=STARTING]
+2025-02-03T13:13:58.007+05:30  INFO 1072 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:13:58.041+05:30  INFO 1072 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 10.196 seconds (process running for 11.561)
+2025-02-03T13:13:58.082+05:30  INFO 1072 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:14:05.025+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:14:05.026+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568645026, current=DOWN, previous=UP]
+2025-02-03T13:14:05.027+05:30  INFO 1072 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:14:05.038+05:30  INFO 1072 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:14:05.038+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:14:05.042+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:14:05.062+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:14:05.063+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:14:08.075+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:14:08.092+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:14:08.092+05:30  INFO 1072 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:14:08.328+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:14:08.328+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:14:08.330+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:16:47.739+05:30  INFO 18268 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 18268 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:16:47.740+05:30  INFO 18268 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:16:47.782+05:30  INFO 18268 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:16:47.783+05:30  INFO 18268 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:16:48.671+05:30  INFO 18268 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:16:48.881+05:30  INFO 18268 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:16:49.260+05:30  INFO 18268 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:16:49.847+05:30  INFO 18268 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:16:49.922+05:30  INFO 18268 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:16:49.965+05:30  INFO 18268 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:16:50.295+05:30  INFO 18268 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:16:50.322+05:30  INFO 18268 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:16:50.663+05:30  INFO 18268 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37196d53
+2025-02-03T13:16:50.666+05:30  INFO 18268 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:16:50.772+05:30  INFO 18268 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:16:51.654+05:30  INFO 18268 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:16:51.777+05:30  INFO 18268 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:16:52.161+05:30  INFO 18268 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:16:53.304+05:30  WARN 18268 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:16:54.219+05:30  INFO 18268 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:16:54.284+05:30  WARN 18268 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:16:54.353+05:30  INFO 18268 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:16:54.387+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:16:54.394+05:30  INFO 18268 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:16:54.412+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:16:54.413+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:16:54.413+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:16:54.413+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:16:54.414+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:16:54.414+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:16:54.414+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:16:54.684+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:16:54.687+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:16:54.690+05:30  INFO 18268 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:16:54.691+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738568814691 with initial instances count: 4
+2025-02-03T13:16:54.695+05:30  INFO 18268 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:16:54.695+05:30  INFO 18268 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568814695, current=UP, previous=STARTING]
+2025-02-03T13:16:54.698+05:30  INFO 18268 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:16:54.734+05:30  INFO 18268 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 9.056 seconds (process running for 10.521)
+2025-02-03T13:16:54.775+05:30  INFO 18268 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:17:01.807+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:17:01.808+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738568821808, current=DOWN, previous=UP]
+2025-02-03T13:17:01.809+05:30  INFO 18268 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:17:01.819+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:17:01.819+05:30  INFO 18268 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:17:01.823+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:17:01.846+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:17:01.848+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:17:04.860+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:17:04.877+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:17:04.878+05:30  INFO 18268 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:17:08.490+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:17:08.490+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:17:08.493+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:18:34.104+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:20:45.386+05:30  INFO 14120 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 14120 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:20:45.387+05:30  INFO 14120 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:20:45.434+05:30  INFO 14120 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:20:45.435+05:30  INFO 14120 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:20:46.345+05:30  INFO 14120 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:20:46.546+05:30  INFO 14120 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:20:46.905+05:30  INFO 14120 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:20:47.426+05:30  INFO 14120 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:20:47.515+05:30  INFO 14120 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:20:47.560+05:30  INFO 14120 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:20:47.800+05:30  INFO 14120 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:20:47.827+05:30  INFO 14120 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:20:48.185+05:30  INFO 14120 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@472dbaf5
+2025-02-03T13:20:48.188+05:30  INFO 14120 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:20:48.288+05:30  INFO 14120 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:20:49.198+05:30  INFO 14120 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:20:49.328+05:30  INFO 14120 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:20:49.791+05:30  INFO 14120 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:20:50.946+05:30  WARN 14120 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:20:51.922+05:30  INFO 14120 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:20:51.999+05:30  WARN 14120 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:20:52.102+05:30  INFO 14120 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:20:52.126+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:20:52.130+05:30  INFO 14120 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:20:52.140+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:20:52.141+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:20:52.141+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:20:52.141+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:20:52.142+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:20:52.142+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:20:52.142+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:20:52.422+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:20:52.425+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:20:52.428+05:30  INFO 14120 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:20:52.430+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738569052429 with initial instances count: 4
+2025-02-03T13:20:52.434+05:30  INFO 14120 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:20:52.434+05:30  INFO 14120 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569052434, current=UP, previous=STARTING]
+2025-02-03T13:20:52.436+05:30  INFO 14120 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:20:52.467+05:30  INFO 14120 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 9.219 seconds (process running for 10.457)
+2025-02-03T13:20:52.511+05:30  INFO 14120 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:20:59.197+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:20:59.198+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569059198, current=DOWN, previous=UP]
+2025-02-03T13:20:59.198+05:30  INFO 14120 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:20:59.206+05:30  INFO 14120 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:20:59.208+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:20:59.212+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:20:59.231+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:20:59.232+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:21:02.245+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:21:02.263+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:21:02.264+05:30  INFO 14120 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:21:08.667+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:21:08.667+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:21:08.669+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:23:34.120+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:27:58.218+05:30  INFO 21964 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 21964 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:27:58.219+05:30  INFO 21964 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:27:58.288+05:30  INFO 21964 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:27:58.288+05:30  INFO 21964 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:27:59.516+05:30  INFO 21964 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:27:59.784+05:30  INFO 21964 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 243 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:28:00.284+05:30  INFO 21964 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:28:01.085+05:30  INFO 21964 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:28:01.208+05:30  INFO 21964 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:28:01.283+05:30  INFO 21964 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:28:01.578+05:30  INFO 21964 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:28:01.613+05:30  INFO 21964 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:28:01.960+05:30  INFO 21964 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@758ebec4
+2025-02-03T13:28:01.965+05:30  INFO 21964 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:28:02.088+05:30  INFO 21964 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:28:02.983+05:30  INFO 21964 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:28:03.166+05:30  INFO 21964 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:28:03.697+05:30  INFO 21964 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:28:04.909+05:30  WARN 21964 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:28:05.981+05:30  INFO 21964 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:28:06.056+05:30  WARN 21964 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:28:06.163+05:30  INFO 21964 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:28:06.220+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:28:06.231+05:30  INFO 21964 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:28:06.252+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:28:06.252+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:28:06.252+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:28:06.252+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:28:06.252+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:28:06.253+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:28:06.254+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:28:06.486+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:28:06.490+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:28:06.492+05:30  INFO 21964 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:28:06.494+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738569486494 with initial instances count: 4
+2025-02-03T13:28:06.498+05:30  INFO 21964 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:28:06.499+05:30  INFO 21964 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569486499, current=UP, previous=STARTING]
+2025-02-03T13:28:06.506+05:30  INFO 21964 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:28:06.545+05:30  INFO 21964 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 10.44 seconds (process running for 11.862)
+2025-02-03T13:28:06.581+05:30  INFO 21964 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:28:15.934+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:28:15.935+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569495935, current=DOWN, previous=UP]
+2025-02-03T13:28:15.935+05:30  INFO 21964 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:28:15.945+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:28:15.950+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:28:15.957+05:30  INFO 21964 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:28:15.974+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:28:15.976+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:28:18.977+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:28:18.996+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:28:18.997+05:30  INFO 21964 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:28:34.134+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:28:38.991+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:28:38.991+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:28:39.001+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:32:11.330+05:30  INFO 3504 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 3504 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T13:32:11.333+05:30  INFO 3504 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T13:32:11.411+05:30  INFO 3504 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T13:32:11.412+05:30  INFO 3504 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T13:32:12.608+05:30  INFO 3504 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T13:32:12.827+05:30  INFO 3504 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 2 JPA repository interfaces.
+2025-02-03T13:32:13.268+05:30  INFO 3504 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T13:32:14.047+05:30  INFO 3504 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T13:32:14.164+05:30  INFO 3504 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T13:32:14.238+05:30  INFO 3504 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T13:32:14.647+05:30  INFO 3504 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T13:32:14.680+05:30  INFO 3504 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T13:32:15.037+05:30  INFO 3504 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@472dbaf5
+2025-02-03T13:32:15.039+05:30  INFO 3504 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T13:32:15.177+05:30  INFO 3504 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T13:32:16.188+05:30  INFO 3504 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T13:32:16.315+05:30  INFO 3504 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:32:16.728+05:30  INFO 3504 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T13:32:18.080+05:30  WARN 3504 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T13:32:19.161+05:30  INFO 3504 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T13:32:19.256+05:30  WARN 3504 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T13:32:19.341+05:30  INFO 3504 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T13:32:19.434+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T13:32:19.446+05:30  INFO 3504 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:32:19.460+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T13:32:19.460+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T13:32:19.461+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T13:32:19.461+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T13:32:19.461+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T13:32:19.461+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T13:32:19.461+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T13:32:19.707+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T13:32:19.712+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T13:32:19.714+05:30  INFO 3504 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T13:32:19.715+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738569739715 with initial instances count: 4
+2025-02-03T13:32:19.719+05:30  INFO 3504 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T13:32:19.721+05:30  INFO 3504 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569739721, current=UP, previous=STARTING]
+2025-02-03T13:32:19.722+05:30  INFO 3504 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:32:19.761+05:30  INFO 3504 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 10.608 seconds (process running for 11.874)
+2025-02-03T13:32:19.802+05:30  INFO 3504 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:32:22.600+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T13:32:22.601+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738569742601, current=DOWN, previous=UP]
+2025-02-03T13:32:22.603+05:30  INFO 3504 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:32:22.619+05:30  INFO 3504 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:32:22.621+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T13:32:22.627+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T13:32:22.655+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T13:32:22.657+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T13:32:25.670+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T13:32:25.689+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T13:32:25.690+05:30  INFO 3504 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T13:32:39.143+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T13:32:39.143+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T13:32:39.154+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T13:33:34.145+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T13:33:38.835+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-03T13:33:38.837+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-03T13:33:38.842+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-02-03T13:33:38.995+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: createTimeEntry, Arguments: [Timeentry(id=null, employeeId=12345, projectId=67890, category=Development, taskDescription=Implementing new feature, startTime=2025-01-27T09:00, endTime=2025-01-27T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.0)]
+2025-02-03T13:33:39.509+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: createTimeEntry, Result: Timeentry(id=1, employeeId=12345, projectId=67890, category=Development, taskDescription=Implementing new feature, startTime=2025-01-27T09:00, endTime=2025-01-27T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.0)
+2025-02-03T14:01:26.977+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:01:27.965+05:30  WARN 12604 --- [timer] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=23m20s902ms628µs300ns).
+2025-02-03T14:02:34.782+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:02:34.804+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=Development, taskDescription=Implementing new feature, startTime=2025-01-27T09:00, endTime=2025-01-27T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:02:44.144+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-3] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: createTimeEntry, Arguments: [Timeentry(id=null, employeeId=12345, projectId=67890, category=Development, taskDescription=Implementing new feature, startTime=2025-01-27T09:00, endTime=2025-01-27T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.0)]
+2025-02-03T14:02:44.150+05:30 ERROR 12604 --- [timer] [http-nio-8084-exec-3] com.cts.timer.aop.LoggingAspect          : An error occurred in TimesheetssService. Method: createTimeEntry, Error: Time entry overlaps with an existing entry.
+2025-02-03T14:02:44.152+05:30 ERROR 12604 --- [timer] [http-nio-8084-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Time entry overlaps with an existing entry.] with root cause
+
+java.lang.IllegalArgumentException: Time entry overlaps with an existing entry.
+	at com.cts.timer.service.TimesheetsServiceImpl.createTimeEntry(TimesheetsServiceImpl.java:135) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.2.jar:6.2.2]
+	at com.cts.timer.service.TimesheetsServiceImpl$$SpringCGLIB$$0.createTimeEntry(<generated>) ~[classes/:na]
+	at com.cts.timer.controller.TimeentryController.createTimesheet(TimeentryController.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-02-03T14:06:26.987+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:07:25.539+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-8] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: updateTimeEntry, Arguments: [1, Timeentry(id=null, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2023-01-15, status=null, submit=null, hours=8.00)]
+2025-02-03T14:07:25.660+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-8] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: updateTimeEntry, Result: Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)
+2025-02-03T14:09:27.105+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:09:27.113+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:09:56.795+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:09:56.802+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:10:19.836+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-4] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: approveReject, Arguments: [[1], approved]
+2025-02-03T14:10:19.844+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-4] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: approveReject, Result: null
+2025-02-03T14:10:24.342+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:10:24.352+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:10:27.993+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-6] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:10:28.000+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-6] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:10:32.169+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: approveReject, Arguments: [[1], approved]
+2025-02-03T14:10:32.176+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-7] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: approveReject, Result: null
+2025-02-03T14:10:36.233+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-8] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:10:36.243+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-8] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=false, hours=8.00)]
+2025-02-03T14:11:26.996+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:12:06.146+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-10] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: submitTimesheet, Arguments: [12345, 2025-01-27]
+2025-02-03T14:12:06.237+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-10] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: submitTimesheet, Result: Submitted successfully
+2025-02-03T14:12:11.629+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:12:11.639+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=PENDING, submit=true, hours=8.00)]
+2025-02-03T14:12:17.181+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: approveReject, Arguments: [[1], approved]
+2025-02-03T14:12:17.229+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: approveReject, Result: null
+2025-02-03T14:12:21.190+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-3] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:12:21.197+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-3] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: [Timeentry(id=1, employeeId=12345, projectId=67890, category=hr, taskDescription=Implementing new feature, startTime=2025-01-23T09:00, endTime=2025-01-23T17:00, date=2025-01-27, status=APPROVED, submit=true, hours=8.00)]
+2025-02-03T14:13:30.288+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: getMonthlyTimesheet, Arguments: [1, 2025, 12345]
+2025-02-03T14:13:30.312+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: getMonthlyTimesheet, Result: [Timesheets(id=null, employeeId=12345, date=2025-01-01, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-02, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-03, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-04, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-05, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-06, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-07, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-08, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-09, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-10, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-11, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-12, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-13, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-14, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-15, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-16, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-17, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-18, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-19, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-20, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-21, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-22, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-23, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-24, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-25, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-26, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=1, employeeId=12345, date=2025-01-27, loggedHrs=8.00, approvedHrs=8.00, status=APPROVED, submit=true, submission_count=1), Timesheets(id=null, employeeId=12345, date=2025-01-28, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-29, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-30, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0), Timesheets(id=null, employeeId=12345, date=2025-01-31, loggedHrs=0, approvedHrs=0, status=PENDING, submit=false, submission_count=0)]
+2025-02-03T14:16:27.001+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:20:41.203+05:30  INFO 12604 --- [timer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-03T14:20:41.212+05:30  INFO 12604 --- [timer] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T14:20:41.212+05:30  INFO 12604 --- [timer] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738572641212, current=DOWN, previous=UP]
+2025-02-03T14:20:41.212+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:20:41.213+05:30  INFO 12604 --- [timer] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T14:20:41.223+05:30  INFO 12604 --- [timer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T14:20:41.230+05:30  INFO 12604 --- [timer] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:20:41.231+05:30  INFO 12604 --- [timer] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-02-03T14:20:41.232+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:20:41.237+05:30  INFO 12604 --- [timer] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-02-03T14:20:41.237+05:30  INFO 12604 --- [timer] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T14:20:44.249+05:30  INFO 12604 --- [timer] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T14:20:44.267+05:30  INFO 12604 --- [timer] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T14:20:44.267+05:30  INFO 12604 --- [timer] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T14:20:45.673+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Starting TimerApplication using Java 21.0.5 with PID 12604 (C:\Users\2380232\git\repository4\timer\target\classes started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T14:20:45.674+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T14:20:45.676+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T14:20:45.676+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T14:20:46.046+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T14:20:46.059+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-02-03T14:20:46.164+05:30  INFO 12604 --- [timer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b0207b1-4870-3596-beb6-ca19127f6d87
+2025-02-03T14:20:46.266+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-02-03T14:20:46.267+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T14:20:46.267+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T14:20:46.296+05:30  INFO 12604 --- [timer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-03T14:20:46.296+05:30  INFO 12604 --- [timer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 620 ms
+2025-02-03T14:20:46.332+05:30  INFO 12604 --- [timer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T14:20:46.335+05:30  INFO 12604 --- [timer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T14:20:46.344+05:30  INFO 12604 --- [timer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T14:20:46.347+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-02-03T14:20:46.359+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@416e84a3
+2025-02-03T14:20:46.359+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-02-03T14:20:46.362+05:30  INFO 12604 --- [timer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T14:20:46.435+05:30  INFO 12604 --- [timer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T14:20:46.506+05:30  INFO 12604 --- [timer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:20:46.631+05:30  WARN 12604 --- [timer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T14:20:46.775+05:30  WARN 12604 --- [timer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-03T14:20:46.808+05:30  INFO 12604 --- [timer] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T14:20:46.823+05:30  WARN 12604 --- [timer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T14:20:46.845+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T14:20:46.847+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T14:20:46.873+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T14:20:46.873+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T14:20:46.873+05:30  INFO 12604 --- [timer] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T14:20:46.873+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738572646873 with initial instances count: 4
+2025-02-03T14:20:46.875+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T14:20:46.875+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738572646875, current=UP, previous=STARTING]
+2025-02-03T14:20:46.875+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:20:46.879+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-02-03T14:20:46.879+05:30  INFO 12604 --- [timer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2025-02-03T14:20:46.884+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:20:46.888+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Started TimerApplication in 2.511 seconds (process running for 10312.561)
+2025-02-03T14:20:46.890+05:30  INFO 12604 --- [timer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-03T14:24:16.785+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-03T14:24:16.786+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-03T14:24:16.788+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-03T14:24:16.795+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: submitTimesheet, Arguments: [12345, 2025-01-27]
+2025-02-03T14:24:16.857+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-2] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: submitTimesheet, Result: Submitted successfully
+2025-02-03T14:24:29.078+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-4] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:24:29.085+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-4] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: []
+2025-02-03T14:24:33.021+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:24:33.029+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-5] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: []
+2025-02-03T14:25:46.854+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:30:36.667+05:30  INFO 12604 --- [timer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-03T14:30:36.668+05:30  INFO 12604 --- [timer] [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T14:30:36.669+05:30  INFO 12604 --- [timer] [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738573236669, current=DOWN, previous=UP]
+2025-02-03T14:30:36.669+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:30:36.669+05:30  INFO 12604 --- [timer] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T14:30:36.674+05:30  INFO 12604 --- [timer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T14:30:36.678+05:30  INFO 12604 --- [timer] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:30:36.678+05:30  INFO 12604 --- [timer] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-02-03T14:30:36.683+05:30  INFO 12604 --- [timer] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-02-03T14:30:36.683+05:30  INFO 12604 --- [timer] [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T14:30:36.684+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:30:36.685+05:30  INFO 12604 --- [timer] [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T14:30:36.686+05:30  INFO 12604 --- [timer] [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T14:30:36.686+05:30  INFO 12604 --- [timer] [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T14:30:37.926+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Starting TimerApplication using Java 21.0.5 with PID 12604 (C:\Users\2380232\git\repository4\timer\target\classes started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T14:30:37.927+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T14:30:37.929+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T14:30:37.929+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T14:30:38.249+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T14:30:38.259+05:30  INFO 12604 --- [timer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2025-02-03T14:30:38.358+05:30  INFO 12604 --- [timer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b0207b1-4870-3596-beb6-ca19127f6d87
+2025-02-03T14:30:38.442+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-02-03T14:30:38.443+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T14:30:38.443+05:30  INFO 12604 --- [timer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T14:30:38.477+05:30  INFO 12604 --- [timer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-03T14:30:38.477+05:30  INFO 12604 --- [timer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 548 ms
+2025-02-03T14:30:38.511+05:30  INFO 12604 --- [timer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T14:30:38.514+05:30  INFO 12604 --- [timer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T14:30:38.523+05:30  INFO 12604 --- [timer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T14:30:38.524+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-02-03T14:30:38.539+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5336e3bd
+2025-02-03T14:30:38.539+05:30  INFO 12604 --- [timer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-02-03T14:30:38.541+05:30  INFO 12604 --- [timer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T14:30:38.609+05:30  INFO 12604 --- [timer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T14:30:38.684+05:30  INFO 12604 --- [timer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:30:38.827+05:30  WARN 12604 --- [timer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T14:30:38.971+05:30  WARN 12604 --- [timer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-02-03T14:30:39.003+05:30  INFO 12604 --- [timer] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T14:30:39.022+05:30  WARN 12604 --- [timer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T14:30:39.048+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T14:30:39.052+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T14:30:39.053+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T14:30:39.079+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T14:30:39.079+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T14:30:39.080+05:30  INFO 12604 --- [timer] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T14:30:39.080+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738573239080 with initial instances count: 4
+2025-02-03T14:30:39.081+05:30  INFO 12604 --- [timer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T14:30:39.081+05:30  INFO 12604 --- [timer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738573239081, current=UP, previous=STARTING]
+2025-02-03T14:30:39.081+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:30:39.084+05:30  INFO 12604 --- [timer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-02-03T14:30:39.085+05:30  INFO 12604 --- [timer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2025-02-03T14:30:39.092+05:30  INFO 12604 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:30:39.092+05:30  INFO 12604 --- [timer] [restartedMain] com.cts.timer.TimerApplication           : Started TimerApplication in 2.318 seconds (process running for 10904.765)
+2025-02-03T14:30:39.094+05:30  INFO 12604 --- [timer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-03T14:30:42.060+05:30  INFO 10384 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Starting TimerApplicationTests using Java 21.0.5 with PID 10384 (started by 2380232 in C:\Users\2380232\git\repository4\timer)
+2025-02-03T14:30:42.063+05:30  INFO 10384 --- [timer] [main] com.cts.timer.TimerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T14:30:42.117+05:30  INFO 10384 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-02-03T14:30:42.117+05:30  INFO 10384 --- [timer] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=timer, profiles=[default], label=null, version=19552b7ef0c70f11bc79cda7ec3614cba70fefbf, state=
+2025-02-03T14:30:43.529+05:30  INFO 10384 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T14:30:43.757+05:30  INFO 10384 --- [timer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206 ms. Found 2 JPA repository interfaces.
+2025-02-03T14:30:44.368+05:30  INFO 10384 --- [timer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=648a6361-4347-3fa5-9566-3358354dc872
+2025-02-03T14:30:45.096+05:30  INFO 10384 --- [timer] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T14:30:45.234+05:30  INFO 10384 --- [timer] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-03T14:30:45.272+05:30  INFO 10384 --- [timer] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T14:30:45.642+05:30  INFO 10384 --- [timer] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T14:30:45.672+05:30  INFO 10384 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-03T14:30:46.117+05:30  INFO 10384 --- [timer] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@758ebec4
+2025-02-03T14:30:46.124+05:30  INFO 10384 --- [timer] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-03T14:30:46.227+05:30  INFO 10384 --- [timer] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T14:30:47.159+05:30  INFO 10384 --- [timer] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T14:30:47.276+05:30  INFO 10384 --- [timer] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:30:47.761+05:30  INFO 10384 --- [timer] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-03T14:30:48.962+05:30  WARN 10384 --- [timer] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T14:30:49.918+05:30  INFO 10384 --- [timer] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T14:30:50.023+05:30  WARN 10384 --- [timer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T14:30:50.089+05:30  INFO 10384 --- [timer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T14:30:50.110+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T14:30:50.113+05:30  INFO 10384 --- [timer] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:30:50.121+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T14:30:50.121+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T14:30:50.122+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T14:30:50.122+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T14:30:50.122+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T14:30:50.122+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T14:30:50.122+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T14:30:50.408+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T14:30:50.412+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T14:30:50.414+05:30  INFO 10384 --- [timer] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T14:30:50.416+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738573250415 with initial instances count: 4
+2025-02-03T14:30:50.420+05:30  INFO 10384 --- [timer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TIMER with eureka with status UP
+2025-02-03T14:30:50.420+05:30  INFO 10384 --- [timer] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738573250420, current=UP, previous=STARTING]
+2025-02-03T14:30:50.426+05:30  INFO 10384 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:30:50.525+05:30  INFO 10384 --- [timer] [main] com.cts.timer.TimerApplicationTests      : Started TimerApplicationTests in 10.415 seconds (process running for 12.792)
+2025-02-03T14:30:50.542+05:30  INFO 10384 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:30:59.871+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TIMER with eureka with status DOWN
+2025-02-03T14:30:59.872+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738573259872, current=DOWN, previous=UP]
+2025-02-03T14:30:59.872+05:30  INFO 10384 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:30:59.880+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T14:30:59.886+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-03T14:30:59.887+05:30  INFO 10384 --- [timer] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:30:59.907+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-03T14:30:59.907+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T14:31:02.911+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T14:31:02.929+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - deregister  status: 200
+2025-02-03T14:31:02.930+05:30  INFO 10384 --- [timer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T14:31:09.109+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - Re-registering apps/TIMER
+2025-02-03T14:31:09.110+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084: registering service...
+2025-02-03T14:31:09.113+05:30  INFO 12604 --- [timer] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TIMER/LTIN564398.cts.com:timer:8084 - registration status: 204
+2025-02-03T14:35:39.056+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:36:55.935+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-03T14:36:55.935+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-03T14:36:55.937+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-03T14:36:55.944+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService is about to be executed. Method: findByDateAndEmployeeId, Arguments: [2025-01-27, 12345]
+2025-02-03T14:36:55.951+05:30  INFO 12604 --- [timer] [http-nio-8084-exec-1] com.cts.timer.aop.LoggingAspect          : A method in TimesheetsService has executed successfully. Method: findByDateAndEmployeeId, Result: []
+2025-02-03T14:40:39.072+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:45:39.087+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:50:39.093+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T14:55:39.105+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:00:39.107+05:30  INFO 12604 --- [timer] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
