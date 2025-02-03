@@ -1674,3 +1674,167 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2025-02-03T14:54:52.441+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T14:59:52.448+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-02-03T15:04:52.452+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:09:52.462+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:14:52.468+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:19:52.475+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:24:52.480+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:29:52.489+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:34:52.491+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:39:52.494+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:44:52.501+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:49:52.512+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:54:52.514+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T15:59:52.521+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T16:04:52.524+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T16:09:52.530+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T16:14:52.539+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T16:50:46.009+05:30  WARN 14668 --- [projects] [HikariPool-22 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Thread starvation or clock leap detected (housekeeper delta=32m51s884ms810µs800ns).
+2025-02-03T16:52:14.420+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T16:57:14.426+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T17:02:14.436+05:30  INFO 14668 --- [projects] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T17:02:53.355+05:30  INFO 14668 --- [projects] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-03T17:02:53.358+05:30  INFO 14668 --- [projects] [Thread-142] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROJECTS with eureka with status DOWN
+2025-02-03T17:02:53.359+05:30  INFO 14668 --- [projects] [Thread-142] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738582373359, current=DOWN, previous=UP]
+2025-02-03T17:02:53.359+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087: registering service...
+2025-02-03T17:02:53.373+05:30  INFO 14668 --- [projects] [Thread-142] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T17:02:53.376+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - registration status: 204
+2025-02-03T17:02:53.382+05:30  INFO 14668 --- [projects] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T17:02:53.392+05:30  INFO 14668 --- [projects] [Thread-142] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T17:02:53.403+05:30  INFO 14668 --- [projects] [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2025-02-03T17:02:53.408+05:30  INFO 14668 --- [projects] [Thread-142] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2025-02-03T17:02:53.410+05:30  INFO 14668 --- [projects] [Thread-142] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T17:02:56.420+05:30  INFO 14668 --- [projects] [Thread-142] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T17:02:56.435+05:30  INFO 14668 --- [projects] [Thread-142] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - deregister  status: 200
+2025-02-03T17:02:56.436+05:30  INFO 14668 --- [projects] [Thread-142] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T17:02:56.666+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : Starting ProjectsApplication using Java 21.0.5 with PID 14668 (C:\Users\2380232\git\repository4\projects\target\classes started by 2380232 in C:\Users\2380232\git\repository4\projects)
+2025-02-03T17:02:56.666+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T17:02:56.935+05:30  INFO 14668 --- [projects] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T17:02:56.942+05:30  INFO 14668 --- [projects] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-02-03T17:02:57.023+05:30  INFO 14668 --- [projects] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9d06038a-a5a1-31fb-8c2d-bce85065259b
+2025-02-03T17:02:57.169+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8087 (http)
+2025-02-03T17:02:57.171+05:30  INFO 14668 --- [projects] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T17:02:57.171+05:30  INFO 14668 --- [projects] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T17:02:57.207+05:30  INFO 14668 --- [projects] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-02-03T17:02:57.207+05:30  INFO 14668 --- [projects] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 538 ms
+2025-02-03T17:02:57.320+05:30  INFO 14668 --- [projects] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T17:02:57.323+05:30  INFO 14668 --- [projects] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T17:02:57.334+05:30  INFO 14668 --- [projects] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T17:02:57.335+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2025-02-03T17:02:57.349+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@757d2a1c
+2025-02-03T17:02:57.350+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2025-02-03T17:02:57.351+05:30  INFO 14668 --- [projects] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-23)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T17:02:57.404+05:30  INFO 14668 --- [projects] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T17:02:57.465+05:30  INFO 14668 --- [projects] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T17:02:57.611+05:30  WARN 14668 --- [projects] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T17:02:58.011+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-03T17:02:58.069+05:30  INFO 14668 --- [projects] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T17:02:58.136+05:30  WARN 14668 --- [projects] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T17:02:58.179+05:30  INFO 14668 --- [projects] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T17:02:58.182+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T17:02:58.210+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T17:02:58.211+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T17:02:58.211+05:30  INFO 14668 --- [projects] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T17:02:58.211+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738582378211 with initial instances count: 4
+2025-02-03T17:02:58.213+05:30  INFO 14668 --- [projects] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROJECTS with eureka with status UP
+2025-02-03T17:02:58.213+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738582378213, current=UP, previous=STARTING]
+2025-02-03T17:02:58.214+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087: registering service...
+2025-02-03T17:02:58.218+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8087 (http) with context path '/'
+2025-02-03T17:02:58.218+05:30  INFO 14668 --- [projects] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2025-02-03T17:02:58.223+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - registration status: 204
+2025-02-03T17:02:58.227+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : Started ProjectsApplication in 1.611 seconds (process running for 21548.607)
+2025-02-03T17:02:58.229+05:30  INFO 14668 --- [projects] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-03T17:03:09.675+05:30  INFO 14668 --- [projects] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-03T17:03:09.677+05:30  INFO 14668 --- [projects] [Thread-148] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROJECTS with eureka with status DOWN
+2025-02-03T17:03:09.678+05:30  INFO 14668 --- [projects] [Thread-148] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738582389678, current=DOWN, previous=UP]
+2025-02-03T17:03:09.678+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087: registering service...
+2025-02-03T17:03:09.679+05:30  INFO 14668 --- [projects] [Thread-148] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T17:03:09.682+05:30  INFO 14668 --- [projects] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T17:03:09.685+05:30  INFO 14668 --- [projects] [Thread-148] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T17:03:09.685+05:30  INFO 14668 --- [projects] [Thread-148] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2025-02-03T17:03:09.689+05:30  INFO 14668 --- [projects] [Thread-148] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2025-02-03T17:03:09.689+05:30  INFO 14668 --- [projects] [Thread-148] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T17:03:09.691+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - registration status: 204
+2025-02-03T17:03:09.692+05:30  INFO 14668 --- [projects] [Thread-148] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T17:03:09.694+05:30  INFO 14668 --- [projects] [Thread-148] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - deregister  status: 200
+2025-02-03T17:03:09.694+05:30  INFO 14668 --- [projects] [Thread-148] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-02-03T17:03:09.805+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : Starting ProjectsApplication using Java 21.0.5 with PID 14668 (C:\Users\2380232\git\repository4\projects\target\classes started by 2380232 in C:\Users\2380232\git\repository4\projects)
+2025-02-03T17:03:09.806+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T17:03:10.014+05:30  INFO 14668 --- [projects] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-03T17:03:10.023+05:30  INFO 14668 --- [projects] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-02-03T17:03:10.080+05:30  INFO 14668 --- [projects] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9d06038a-a5a1-31fb-8c2d-bce85065259b
+2025-02-03T17:03:10.193+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8087 (http)
+2025-02-03T17:03:10.194+05:30  INFO 14668 --- [projects] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-03T17:03:10.194+05:30  INFO 14668 --- [projects] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-03T17:03:10.233+05:30  INFO 14668 --- [projects] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-02-03T17:03:10.234+05:30  INFO 14668 --- [projects] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 426 ms
+2025-02-03T17:03:10.320+05:30  INFO 14668 --- [projects] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-03T17:03:10.323+05:30  INFO 14668 --- [projects] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-03T17:03:10.331+05:30  INFO 14668 --- [projects] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-03T17:03:10.331+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2025-02-03T17:03:10.341+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40d78f42
+2025-02-03T17:03:10.342+05:30  INFO 14668 --- [projects] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2025-02-03T17:03:10.343+05:30  INFO 14668 --- [projects] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-24)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-03T17:03:10.380+05:30  INFO 14668 --- [projects] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-03T17:03:10.413+05:30  INFO 14668 --- [projects] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T17:03:10.543+05:30  WARN 14668 --- [projects] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-03T17:03:10.845+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-03T17:03:10.909+05:30  INFO 14668 --- [projects] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-02-03T17:03:10.968+05:30  WARN 14668 --- [projects] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-02-03T17:03:11.009+05:30  INFO 14668 --- [projects] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-02-03T17:03:11.012+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-02-03T17:03:11.029+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-02-03T17:03:11.030+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-02-03T17:03:11.030+05:30  INFO 14668 --- [projects] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-02-03T17:03:11.030+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738582391030 with initial instances count: 4
+2025-02-03T17:03:11.033+05:30  INFO 14668 --- [projects] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROJECTS with eureka with status UP
+2025-02-03T17:03:11.034+05:30  INFO 14668 --- [projects] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738582391034, current=UP, previous=STARTING]
+2025-02-03T17:03:11.034+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087: registering service...
+2025-02-03T17:03:11.038+05:30  INFO 14668 --- [projects] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8087 (http) with context path '/'
+2025-02-03T17:03:11.039+05:30  INFO 14668 --- [projects] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2025-02-03T17:03:11.042+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - registration status: 204
+2025-02-03T17:03:11.048+05:30  INFO 14668 --- [projects] [restartedMain] com.cts.projects.ProjectsApplication     : Started ProjectsApplication in 1.271 seconds (process running for 21561.428)
+2025-02-03T17:03:11.050+05:30  INFO 14668 --- [projects] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-03T17:07:10.162+05:30  INFO 14668 --- [projects] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-03T17:07:10.162+05:30  INFO 14668 --- [projects] [Thread-154] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROJECTS with eureka with status DOWN
+2025-02-03T17:07:10.163+05:30  INFO 14668 --- [projects] [Thread-154] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738582630163, current=DOWN, previous=UP]
+2025-02-03T17:07:10.163+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087: registering service...
+2025-02-03T17:07:10.163+05:30  INFO 14668 --- [projects] [Thread-154] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-03T17:07:10.167+05:30  INFO 14668 --- [projects] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-03T17:07:10.169+05:30  INFO 14668 --- [projects] [Thread-154] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-03T17:07:10.170+05:30  INFO 14668 --- [projects] [Thread-154] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2025-02-03T17:07:10.173+05:30  INFO 14668 --- [projects] [Thread-154] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2025-02-03T17:07:10.174+05:30  INFO 14668 --- [projects] [Thread-154] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-02-03T17:07:10.190+05:30  INFO 14668 --- [projects] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - registration status: 204
+2025-02-03T17:07:10.190+05:30  INFO 14668 --- [projects] [Thread-154] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-02-03T17:07:10.192+05:30  INFO 14668 --- [projects] [Thread-154] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROJECTS/LTIN564398.cts.com:projects:8087 - deregister  status: 200
+2025-02-03T17:07:10.192+05:30  INFO 14668 --- [projects] [Thread-154] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

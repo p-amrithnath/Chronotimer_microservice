@@ -47,7 +47,7 @@ public class Projects {
 
 	@Column(nullable = false)
 	@NotBlank(message = "TAM is mandatory")
-	private String TAM;
+	private String tam;
 
 	@Column(nullable = false)
 	@NotNull(message = "Estimated hours are mandatory")

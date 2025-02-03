@@ -40,7 +40,7 @@ public class TeamsServiceImpl implements TeamsService {
 
 	@Override
 	public Teams createTeam(Teams team) {
-		String Text = "User email" + team.getEmail();
+//		String Text = "User email" + team.getEmail();
 //		emailService.sendEmail(team.getEmail(), "Welcome to CTS ",Text);
 		return teamsDao.save(team);
 	}

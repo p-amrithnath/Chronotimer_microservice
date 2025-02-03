@@ -43,7 +43,7 @@ class ProjectsApplicationTests {
 		project.setType("Development");
 		project.setStartDate(LocalDate.now().minusDays(1));
 		project.setCloseDate(LocalDate.now().plusDays(10));
-		project.setTAM("John Doe");
+		project.setTam("John Doe");
 		project.setEstimatedhrs(100);
 		project.setDescription("Test project description");
 	}

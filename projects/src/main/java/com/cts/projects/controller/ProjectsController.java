@@ -34,8 +34,7 @@ public class ProjectsController {
 	 */
 	@PostMapping("/save")
 	public Projects saveProject(@RequestBody Projects project) {
-		Projects savedProject = projectService.saveProject(project);
-		return savedProject;
+		return projectService.saveProject(project);
 	}
 
 	/**
@@ -46,8 +45,7 @@ public class ProjectsController {
 	 */
 	@PutMapping("/edit")
 	public Projects updateProject(@RequestBody Projects project) {
-		Projects updatedProject = projectService.updateProject(project);
-		return updatedProject;
+		return projectService.updateProject(project);
 	}
 
 	/**
@@ -69,8 +67,7 @@ public class ProjectsController {
 	 */
 	@GetMapping("/getAll")
 	public List<Projects> getAllProjects() {
-		List<Projects> projects = projectService.getAllProjects();
-		return projects;
+		return projectService.getAllProjects();
 	}
 
 	/**
@@ -81,7 +78,6 @@ public class ProjectsController {
 	 */
 	@GetMapping("/getById/{id}")
 	public Projects getProjectById(@PathVariable int id) {
-		Projects project = projectService.getProjectById(id);
-		return project;
+		return projectService.getProjectById(id);
 	}
 }

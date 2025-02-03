@@ -171,7 +171,7 @@ class TimerApplicationTests {
 				.thenReturn(Arrays.asList(timeentry));
 		timesheetsService.submitTimeentries(timeentry.getDate(), timeentry.getEmployeeId());
 		verify(timeentryDao, times(1)).save(timeentry);
-		assertTrue(timeentry.getSubmit());
+		assertTrue(timeentry.isSubmit());
 	}
 
 }

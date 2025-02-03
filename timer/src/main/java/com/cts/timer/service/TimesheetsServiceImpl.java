@@ -25,7 +25,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 
 	@Autowired
 	private TimeentryDao timeentryDao;
-
+	
 	@Override
 	public void updateTimesheet(LocalDate date, Long employeeId) {
 		Timesheets timesheet = timesheetsDao.findByEmployeeIdAndDate(employeeId, date).orElse(new Timesheets(null,
@@ -40,7 +40,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		boolean allSubmit = true;
 
 		for (Timeentry entry : timeEntries) {
-			if (entry.getSubmit()) {
+			if (entry.isSubmit()) {
 				totalLoggedHrs = totalLoggedHrs.add(entry.getHours());
 				if (entry.getStatus() == Timeentry.Status.APPROVED) {
 					totalApprovedHrs = totalApprovedHrs.add(entry.getHours());
@@ -182,16 +182,11 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 			Timeentry timeentry = timeentryDao.findById(id)
 					.orElseThrow(() -> new ResourceNotFoundException("Timeentry not found"));
 
-			if (timeentry.getStatus() == Timeentry.Status.APPROVED) {
-				continue;
-			}
-			if (timeentry.getSubmit()) {
+			if (timeentry.getStatus() != Timeentry.Status.APPROVED && timeentry.isSubmit()) {
 				timeentry.setStatus(Timeentry.Status.valueOf(status.toUpperCase()));
-			} else {
-				continue;
+				timeentryDao.save(timeentry);
+				updateTimesheet(timeentry.getDate(), timeentry.getEmployeeId());
 			}
-			timeentryDao.save(timeentry);
-			updateTimesheet(timeentry.getDate(), timeentry.getEmployeeId());
 		}
 	}
 
@@ -204,14 +199,11 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 	public void submitTimeentries(LocalDate date, Long employeeId) {
 		List<Timeentry> timeentries = findByDateAndEmployeeId(date, employeeId);
 		for (Timeentry timeentry : timeentries) {
-			if (timeentry.getSubmit()) {
-				continue;
-			} else {
+			if (!timeentry.isSubmit()) {
 				timeentry.setSubmit(true);
 				timeentryDao.save(timeentry);
 			}
 		}
-
 	}
 
 }

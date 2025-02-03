@@ -1,7 +1,5 @@
 package com.cts.projects.aop;
 
-import java.util.Arrays;
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -24,19 +22,19 @@ public class LoggingAspect {
 
 	@Before("serviceMethods()")
 	public void logBefore(JoinPoint joinPoint) {
-		logger.info("A method in ProjectsService is about to be executed. Method: " + joinPoint.getSignature().getName()
-				+ ", Arguments: " + Arrays.toString(joinPoint.getArgs()));
+		logger.info("A method in ProjectsService is about to be executed. Method: {},Arguments: {}",
+				joinPoint.getSignature().getName(), joinPoint.getArgs());
 	}
 
 	@AfterReturning(pointcut = "serviceMethods()", returning = "result")
 	public void logAfterReturning(JoinPoint joinPoint, Object result) {
-		logger.info("A method in ProjectsService has executed successfully. Method: "
-				+ joinPoint.getSignature().getName() + ", Result: " + result);
+		logger.info("A method in ProjectsService has executed successfully. Method:{}, Result: {}",
+				joinPoint.getSignature().getName(), result);
 	}
 
 	@AfterThrowing(pointcut = "serviceMethods()", throwing = "error")
 	public void logAfterThrowing(JoinPoint joinPoint, Throwable error) {
-		logger.error("An error occurred in ProjectsService. Method: " + joinPoint.getSignature().getName() + ", Error: "
-				+ error.getMessage());
+		logger.error("An error occurred in ProjectsService. Method: {} ,Error: {}", joinPoint.getSignature().getName(),
+				error.getMessage());
 	}
 }
