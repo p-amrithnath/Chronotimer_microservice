@@ -45,7 +45,7 @@ public class Timesheets {
 	private boolean submit;
 
 
-	private int submission_count;
+	private int submissionCount;
 
 	public enum Status {
 		PENDING, APPROVED, REJECTED, PARTIALLY

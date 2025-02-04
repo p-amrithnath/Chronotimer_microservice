@@ -17,15 +17,35 @@ import com.cts.timer.exception.ResourceNotFoundException;
 import com.cts.timer.model.Timeentry;
 import com.cts.timer.model.Timesheets;
 
+/**
+ * Service implementation for managing timesheets and time entries.
+ */
 @Service
 public class TimesheetsServiceImpl implements TimesheetsService {
 
-	@Autowired
-	private TimesheetsDao timesheetsDao;
+	private final TimesheetsDao timesheetsDao;
+	private final TimeentryDao timeentryDao;
 
+	private static final String TIMEENTRY_NOT_FOUND = "Timeentry not found";
+
+	/**
+	 * Constructor for TimesheetsServiceImpl.
+	 *
+	 * @param timesheetsDao DAO for timesheets.
+	 * @param timeentryDao  DAO for time entries.
+	 */
 	@Autowired
-	private TimeentryDao timeentryDao;
-	
+	public TimesheetsServiceImpl(TimesheetsDao timesheetsDao, TimeentryDao timeentryDao) {
+		this.timesheetsDao = timesheetsDao;
+		this.timeentryDao = timeentryDao;
+	}
+
+	/**
+	 * Updates the timesheet for a given date and employee.
+	 *
+	 * @param date       The date of the timesheet.
+	 * @param employeeId The ID of the employee.
+	 */
 	@Override
 	public void updateTimesheet(LocalDate date, Long employeeId) {
 		Timesheets timesheet = timesheetsDao.findByEmployeeIdAndDate(employeeId, date).orElse(new Timesheets(null,
@@ -77,6 +97,15 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		timesheetsDao.save(timesheet);
 	}
 
+	/**
+	 * Retrieves the monthly timesheet for a given month, year, and employee.
+	 *
+	 * @param month      The month of the timesheet.
+	 * @param year       The year of the timesheet.
+	 * @param employeeId The ID of the employee.
+	 * @return A list of timesheets for the specified month.
+	 */
+
 	@Override
 	public List<Timesheets> getMonthlyTimesheet(int month, int year, Long employeeId) {
 		List<Timesheets> monthlyTimesheet = new ArrayList<>();
@@ -96,6 +125,14 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		return monthlyTimesheet;
 	}
 
+	/**
+	 * Checks if a new time entry overlaps with existing entries.
+	 *
+	 * @param newEntry The new time entry to check.
+	 * @return True if the new entry overlaps with existing entries, false
+	 *         otherwise.
+	 */
+
 	@Override
 	public boolean isOverlapping(Timeentry newEntry) {
 		List<Timeentry> existingEntries = timeentryDao.findByDateAndEmployeeId(newEntry.getDate(),
@@ -110,6 +147,14 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		return false;
 	}
 
+	/**
+	 * Submits the timesheet for a given date and employee.
+	 *
+	 * @param employeeId The ID of the employee.
+	 * @param date       The date of the timesheet.
+	 * @return A message indicating the result of the submission.
+	 */
+
 	@Override
 	public String submitTimesheet(Long employeeId, LocalDate date) {
 
@@ -118,7 +163,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		Optional<Timesheets> timesheet = timesheetsDao.findByEmployeeIdAndDate(employeeId, date);
 		if (timesheet.isPresent()) {
 			Timesheets ts = timesheet.get();
-			ts.setSubmission_count(ts.getSubmission_count() + 1);
+			ts.setSubmissionCount(ts.getSubmissionCount() + 1);
 			timesheetsDao.save(ts);
 
 		} else {
@@ -127,6 +172,13 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		return "Submitted successfully";
 
 	}
+
+	/**
+	 * Creates a new time entry.
+	 *
+	 * @param timeEntry The time entry to create.
+	 * @return The created time entry.
+	 */
 
 	@Override
 	public Timeentry createTimeEntry(Timeentry timeEntry) {
@@ -139,10 +191,18 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		return savedTimeEntry;
 	}
 
+	/**
+	 * Updates an existing time entry.
+	 *
+	 * @param id               The ID of the time entry to update.
+	 * @param timeEntryDetails The new details of the time entry.
+	 * @return The updated time entry.
+	 */
+
 	@Override
 	public Timeentry updateTimeEntry(Long id, Timeentry timeEntryDetails) {
 		Timeentry timeEntry = timeentryDao.findById(id)
-				.orElseThrow(() -> new ResourceNotFoundException("Timeentry not found"));
+				.orElseThrow(() -> new ResourceNotFoundException(TIMEENTRY_NOT_FOUND));
 
 		if (timeEntry.getStatus() == Timeentry.Status.APPROVED) {
 			return null;
@@ -163,24 +223,47 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		return updatedTimeEntry;
 	}
 
+	/**
+	 * Retrieves time entries for a given date and employee.
+	 *
+	 * @param date       The date of the time entries.
+	 * @param employeeId The ID of the employee.
+	 * @return A list of time entries for the specified date and employee.
+	 */
+
 	@Override
 	public List<Timeentry> getTimeentriesOnDateAndEmployee(LocalDate date, Long employeeId) {
 		return timeentryDao.findByDateAndEmployeeId(date, employeeId);
 	}
 
+	/**
+	 * Deletes a time entry by its ID.
+	 *
+	 * @param id The ID of the time entry to delete.
+	 */
+
 	@Override
 	public void deleteTimeEntry(Long id) {
 		Timeentry timeentry = timeentryDao.findById(id)
-				.orElseThrow(() -> new ResourceNotFoundException("Timeentry not found"));
+				.orElseThrow(() -> new ResourceNotFoundException(TIMEENTRY_NOT_FOUND));
 		timeentryDao.deleteById(id);
 		updateTimesheet(timeentry.getDate(), timeentry.getEmployeeId());
 	}
+
+	/**
+	 * Approves or rejects a list of time entries based on their IDs and the
+	 * specified status.
+	 *
+	 * @param timeentryIds The list of time entry IDs to approve or reject.
+	 * @param status       The status to set for the time entries (e.g., "APPROVED",
+	 *                     "REJECTED").
+	 */
 
 	@Override
 	public void approveReject(List<Long> timeentryIds, String status) {
 		for (Long id : timeentryIds) {
 			Timeentry timeentry = timeentryDao.findById(id)
-					.orElseThrow(() -> new ResourceNotFoundException("Timeentry not found"));
+					.orElseThrow(() -> new ResourceNotFoundException(TIMEENTRY_NOT_FOUND));
 
 			if (timeentry.getStatus() != Timeentry.Status.APPROVED && timeentry.isSubmit()) {
 				timeentry.setStatus(Timeentry.Status.valueOf(status.toUpperCase()));
@@ -190,10 +273,25 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 		}
 	}
 
+	/**
+	 * Retrieves time entries for a given date and employee.
+	 *
+	 * @param date       The date of the time entries.
+	 * @param employeeId The ID of the employee.
+	 * @return A list of time entries for the specified date and employee.
+	 */
+
 	@Override
 	public List<Timeentry> findByDateAndEmployeeId(LocalDate date, Long employeeId) {
 		return timeentryDao.findByDateAndEmployeeId(date, employeeId);
 	}
+
+	/**
+	 * Submits all time entries for a given date and employee.
+	 *
+	 * @param date       The date of the time entries.
+	 * @param employeeId The ID of the employee.
+	 */
 
 	@Override
 	public void submitTimeentries(LocalDate date, Long employeeId) {

@@ -54,7 +54,7 @@ class TimerApplicationTests {
 		timesheet.setApprovedHrs(BigDecimal.ZERO);
 		timesheet.setStatus(Timesheets.Status.PENDING);
 		timesheet.setSubmit(false);
-		timesheet.setSubmission_count(0);
+		timesheet.setSubmissionCount(0);
 
 		timeentry = new Timeentry();
 		timeentry.setId(1L);

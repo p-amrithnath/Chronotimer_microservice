@@ -23,8 +23,12 @@ import com.cts.projects.service.ProjectsService;
 @RequestMapping("/projects")
 public class ProjectsController {
 
+	private final ProjectsService projectService;
+
 	@Autowired
-	private ProjectsService projectService;
+	public ProjectsController(ProjectsService projectService) {
+		this.projectService = projectService;
+	}
 
 	/**
 	 * Endpoint to save a new project.

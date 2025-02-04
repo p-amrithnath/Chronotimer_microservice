@@ -16,8 +16,15 @@ import com.cts.projects.model.Projects;
 @Service
 public class ProjectsServiceImpl implements ProjectsService {
 
+	
+	private final ProjectsDao projectDao;
+	
+	private static final String PROJECT_NOT_FOUND = "Project not found with id: ";
+	
 	@Autowired
-	private ProjectsDao projectDao;
+	public ProjectsServiceImpl(ProjectsDao projectDao) {
+		this.projectDao = projectDao;
+	}
 
 	/**
 	 * Saves a new project.
@@ -40,7 +47,7 @@ public class ProjectsServiceImpl implements ProjectsService {
 	@Override
 	public Projects updateProject(Projects project) {
 		if (!projectDao.existsById(project.getId())) {
-			throw new ResourceNotFoundException("Project not found with id: " + project.getId());
+			throw new ResourceNotFoundException(PROJECT_NOT_FOUND + project.getId());
 		}
 		return projectDao.save(project);
 	}
@@ -54,7 +61,7 @@ public class ProjectsServiceImpl implements ProjectsService {
 	@Override
 	public void deleteProject(int id) {
 		if (!projectDao.existsById(id)) {
-			throw new ResourceNotFoundException("Project not found with id: " + id);
+			throw new ResourceNotFoundException(PROJECT_NOT_FOUND + id);
 		}
 		projectDao.deleteById(id);
 	}
@@ -80,7 +87,7 @@ public class ProjectsServiceImpl implements ProjectsService {
 	public Projects getProjectById(int id) {
 		Optional<Projects> project = projectDao.findById(id);
 		if (project.isEmpty()) {
-			throw new ResourceNotFoundException("Project not found with id: " + id);
+			throw new ResourceNotFoundException(PROJECT_NOT_FOUND + id);
 		}
 		return project.get();
 	}
