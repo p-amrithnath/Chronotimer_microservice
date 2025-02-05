@@ -23,7 +23,7 @@ import com.cts.projects.exception.ResourceNotFoundException;
 import com.cts.projects.model.Projects;
 import com.cts.projects.service.ProjectsServiceImpl;
 
-//@SpringBootTest
+
 @ExtendWith(MockitoExtension.class)
 class ProjectsApplicationTests {
 

@@ -11,8 +11,12 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.cts.timer.client.RemarksClient;
 import com.cts.timer.dao.TimeentryDao;
 import com.cts.timer.dao.TimesheetsDao;
+import com.cts.timer.dto.ApprovalRequestDTO;
+import com.cts.timer.dto.RemarksDTO;
+import com.cts.timer.dto.TimesheetResponseDTO;
 import com.cts.timer.exception.ResourceNotFoundException;
 import com.cts.timer.model.Timeentry;
 import com.cts.timer.model.Timesheets;
@@ -25,6 +29,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 
 	private final TimesheetsDao timesheetsDao;
 	private final TimeentryDao timeentryDao;
+	private final RemarksClient remarksClient;
 
 	private static final String TIMEENTRY_NOT_FOUND = "Timeentry not found";
 
@@ -35,9 +40,10 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 	 * @param timeentryDao  DAO for time entries.
 	 */
 	@Autowired
-	public TimesheetsServiceImpl(TimesheetsDao timesheetsDao, TimeentryDao timeentryDao) {
+	public TimesheetsServiceImpl(TimesheetsDao timesheetsDao, TimeentryDao timeentryDao, RemarksClient remarksClient) {
 		this.timesheetsDao = timesheetsDao;
 		this.timeentryDao = timeentryDao;
+		this.remarksClient = remarksClient;
 	}
 
 	/**
@@ -50,7 +56,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 	public void updateTimesheet(LocalDate date, Long employeeId) {
 		Timesheets timesheet = timesheetsDao.findByEmployeeIdAndDate(employeeId, date).orElse(new Timesheets(null,
 				employeeId, date, BigDecimal.ZERO, BigDecimal.ZERO, Timesheets.Status.PENDING, false, 0));
-		List<Timeentry> timeEntries = findByDateAndEmployeeId(date, employeeId);
+		List<Timeentry> timeEntries = timeentryDao.findByDateAndEmployeeId(date, employeeId);
 		BigDecimal totalLoggedHrs = BigDecimal.ZERO;
 		BigDecimal totalApprovedHrs = BigDecimal.ZERO;
 
@@ -80,12 +86,11 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 
 		timesheet.setApprovedHrs(totalApprovedHrs);
 		timesheet.setLoggedHrs(totalLoggedHrs);
-
-		if (allApproved) {
+		if (allApproved && allSubmit) {
 			timesheet.setStatus(Timesheets.Status.APPROVED);
-		} else if (allRejected) {
+		} else if (allRejected && allSubmit) {
 			timesheet.setStatus(Timesheets.Status.REJECTED);
-		} else if (allPending) {
+		} else if (allPending && allSubmit) {
 			timesheet.setStatus(Timesheets.Status.PENDING);
 		} else {
 			if (totalLoggedHrs.compareTo(totalApprovedHrs) > 0) {
@@ -260,17 +265,29 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 	 */
 
 	@Override
-	public void approveReject(List<Long> timeentryIds, String status) {
-		for (Long id : timeentryIds) {
+	public void approveReject(ApprovalRequestDTO request) {
+
+		RemarksDTO remark = new RemarksDTO();
+		remark.setTimesheetId(request.getTimesheetId());
+		remark.setMessage(request.getMessage());
+		remark.setCreatedAt(request.getCreatedAt());
+		remark.setCreatedBy(request.getCreatedBy());
+
+		for (Long id : request.getTimeentryIds()) {
 			Timeentry timeentry = timeentryDao.findById(id)
 					.orElseThrow(() -> new ResourceNotFoundException(TIMEENTRY_NOT_FOUND));
 
 			if (timeentry.getStatus() != Timeentry.Status.APPROVED && timeentry.isSubmit()) {
-				timeentry.setStatus(Timeentry.Status.valueOf(status.toUpperCase()));
+				timeentry.setStatus(Timeentry.Status.valueOf(request.getStatus().toUpperCase()));
 				timeentryDao.save(timeentry);
 				updateTimesheet(timeentry.getDate(), timeentry.getEmployeeId());
 			}
 		}
+
+		if (request.getMessage() != null && !request.getMessage().isEmpty()) {
+			remarksClient.createRemarks(remark);
+		}
+
 	}
 
 	/**
@@ -282,8 +299,22 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 	 */
 
 	@Override
-	public List<Timeentry> findByDateAndEmployeeId(LocalDate date, Long employeeId) {
-		return timeentryDao.findByDateAndEmployeeId(date, employeeId);
+	public TimesheetResponseDTO findByDateAndEmployeeId(LocalDate date, Long employeeId) {
+		Optional<Timesheets> timesheetsOptional = timesheetsDao.findByEmployeeIdAndDate(employeeId, date);
+
+		List<RemarksDTO> remarks = timesheetsOptional.map(ts -> {
+			Long timesheetId = ts.getId();
+			return remarksClient.getRemarksByTimesheetId(timesheetId).getBody();
+		}).orElse(List.of());
+
+		List<Timeentry> timeentries = timeentryDao.findByDateAndEmployeeId(date, employeeId);
+
+		TimesheetResponseDTO response = new TimesheetResponseDTO();
+		timesheetsOptional.ifPresent(response::setTimesheets); // Set the Timesheets object if present
+		response.setTimeentries(timeentries);
+		response.setRemarks(remarks);
+
+		return response;
 	}
 
 	/**
@@ -295,7 +326,7 @@ public class TimesheetsServiceImpl implements TimesheetsService {
 
 	@Override
 	public void submitTimeentries(LocalDate date, Long employeeId) {
-		List<Timeentry> timeentries = findByDateAndEmployeeId(date, employeeId);
+		List<Timeentry> timeentries = timeentryDao.findByDateAndEmployeeId(date, employeeId);
 		for (Timeentry timeentry : timeentries) {
 			if (!timeentry.isSubmit()) {
 				timeentry.setSubmit(true);

@@ -1,7 +1,6 @@
 package com.cts.timer.controller;
 
 import java.time.LocalDate;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.timer.dto.ApprovalRequestDTO;
+import com.cts.timer.dto.TimesheetResponseDTO;
 import com.cts.timer.model.Timeentry;
 import com.cts.timer.service.TimesheetsService;
 
@@ -47,7 +47,7 @@ public class TimeentryController {
 	 */
 
 	@GetMapping("/fetch/{employeeId}/{date}")
-	public List<Timeentry> findByDateAndEmployeeId(@PathVariable("date") LocalDate date,
+	public TimesheetResponseDTO findByDateAndEmployeeId(@PathVariable("date") LocalDate date,
 			@PathVariable("employeeId") Long employeeId) {
 
 		return timeentryService.findByDateAndEmployeeId(date, employeeId);
@@ -87,9 +87,9 @@ public class TimeentryController {
 	 */
 
 	@GetMapping("/timeentry")
-	public List<Timeentry> getTimeentriesOnDateAndEmployee(@RequestParam("date") LocalDate date,
+	public TimesheetResponseDTO getTimeentriesOnDateAndEmployee(@RequestParam("date") LocalDate date,
 			@RequestParam("employeeId") Long employeeId) {
-		return timeentryService.getTimeentriesOnDateAndEmployee(date, employeeId);
+		return timeentryService.findByDateAndEmployeeId(date, employeeId);
 	}
 
 	/**
@@ -131,7 +131,7 @@ public class TimeentryController {
 
 	@PatchMapping("/approve-reject")
 	public void approveReject(@RequestBody ApprovalRequestDTO request) {
-		timeentryService.approveReject(request.getTimeentryIds(), request.getStatus());
+		timeentryService.approveReject(request);
 	}
 
 }

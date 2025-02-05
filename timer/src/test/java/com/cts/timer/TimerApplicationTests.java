@@ -2,6 +2,7 @@ package com.cts.timer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.times;
@@ -21,14 +22,18 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.ResponseEntity;
 
+import com.cts.timer.client.RemarksClient;
 import com.cts.timer.dao.TimeentryDao;
 import com.cts.timer.dao.TimesheetsDao;
+import com.cts.timer.dto.ApprovalRequestDTO;
+import com.cts.timer.dto.RemarksDTO;
+import com.cts.timer.dto.TimesheetResponseDTO;
 import com.cts.timer.model.Timeentry;
 import com.cts.timer.model.Timesheets;
 import com.cts.timer.service.TimesheetsServiceImpl;
 
-//@SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class TimerApplicationTests {
 
@@ -37,6 +42,9 @@ class TimerApplicationTests {
 
 	@Mock
 	private TimeentryDao timeentryDao;
+
+	@Mock
+	private RemarksClient remarksClient;
 
 	@InjectMocks
 	private TimesheetsServiceImpl timesheetsService;
@@ -118,8 +126,7 @@ class TimerApplicationTests {
 		when(timeentryDao.save(timeentry)).thenReturn(timeentry);
 
 		Timeentry result = timesheetsService.createTimeEntry(timeentry);
-
-		assertEquals(timeentry.getId(), result.getId());
+		assertEquals(timeentry, result);
 		verify(timeentryDao, times(1)).save(timeentry);
 	}
 
@@ -128,7 +135,13 @@ class TimerApplicationTests {
 		when(timeentryDao.findById(timeentry.getId())).thenReturn(Optional.of(timeentry));
 		when(timeentryDao.save(timeentry)).thenReturn(timeentry);
 
+		System.out.println("ID:" + timeentry.getId());
+		System.out.println("Timeentry:" + timeentry);
+
 		Timeentry result = timesheetsService.updateTimeEntry(timeentry.getId(), timeentry);
+
+		System.out.println("TimeEntry " + timeentry.getId());
+		System.out.println("REsult " + result);
 
 		assertEquals(timeentry.getId(), result.getId());
 		verify(timeentryDao, times(1)).save(timeentry);
@@ -147,21 +160,59 @@ class TimerApplicationTests {
 	public void testApproveReject() {
 		when(timeentryDao.findById(timeentry.getId())).thenReturn(Optional.of(timeentry));
 
-		timesheetsService.approveReject(Arrays.asList(timeentry.getId()), "APPROVED");
+		ApprovalRequestDTO request = new ApprovalRequestDTO();
+		request.setTimeentryIds(Arrays.asList(timeentry.getId()));
+		request.setStatus("APPROVED");
+		request.setTimesheetId(1L);
+		request.setMessage("Approved");
+		request.setCreatedAt(LocalDateTime.now());
+		request.setCreatedBy("user1");
+
+		timesheetsService.approveReject(request);
 
 		verify(timeentryDao, atLeastOnce()).save(timeentry);
 	}
 
 	@Test
 	public void testFindByDateAndEmployeeId() {
+		// Mock the timeentryDao response
 		when(timeentryDao.findByDateAndEmployeeId(timeentry.getDate(), timeentry.getEmployeeId()))
 				.thenReturn(Arrays.asList(timeentry));
 
-		List<Timeentry> result = timesheetsService.findByDateAndEmployeeId(timeentry.getDate(),
+		// Mock the timesheetsDao response
+		Timesheets timesheets = new Timesheets();
+		timesheets.setId(1L);
+		timesheets.setEmployeeId(timeentry.getEmployeeId());
+		timesheets.setDate(timeentry.getDate());
+		when(timesheetsDao.findByEmployeeIdAndDate(timeentry.getEmployeeId(), timeentry.getDate()))
+				.thenReturn(Optional.of(timesheets));
+
+		// Mock the remarksClient response
+		RemarksDTO remark = new RemarksDTO();
+		remark.setTimesheetId(timesheets.getId());
+		remark.setMessage("Test remark");
+		remark.setCreatedAt(LocalDateTime.now());
+		remark.setCreatedBy("user1");
+		when(remarksClient.getRemarksByTimesheetId(timesheets.getId()))
+				.thenReturn(ResponseEntity.ok(Arrays.asList(remark)));
+
+		// Call the service method
+		TimesheetResponseDTO result = timesheetsService.findByDateAndEmployeeId(timeentry.getDate(),
 				timeentry.getEmployeeId());
 
-		assertFalse(result.isEmpty());
+		// Verify the results
+		assertNotNull(result);
+		assertFalse(result.getTimeentries().isEmpty());
+		assertFalse(result.getRemarks().isEmpty());
+		assertEquals(1, result.getTimeentries().size());
+		assertEquals(1, result.getRemarks().size());
+		assertEquals(timeentry, result.getTimeentries().get(0));
+		assertEquals(remark, result.getRemarks().get(0));
+
+		// Verify the interactions
 		verify(timeentryDao, times(1)).findByDateAndEmployeeId(timeentry.getDate(), timeentry.getEmployeeId());
+		verify(timesheetsDao, times(1)).findByEmployeeIdAndDate(timeentry.getEmployeeId(), timeentry.getDate());
+		verify(remarksClient, times(1)).getRemarksByTimesheetId(timesheets.getId());
 	}
 
 	@Test

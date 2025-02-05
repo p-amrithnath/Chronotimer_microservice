@@ -31,7 +31,7 @@ import com.cts.teams.model.Teams;
 import com.cts.teams.service.TeamsServiceImpl;
 import com.cts.teams.utils.EmailService;
 
-//@SpringBootTest
+
 @ExtendWith(MockitoExtension.class)
 class TeamsApplicationTests {
 
